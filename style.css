@@ -1,0 +1,169 @@
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+
+  .btn {
+    font-size: 1rem;
+    background: none;
+    padding: 0.5em 1em;
+    margin-bottom: 2em;
+    border: none;
+    border-radius: 0.3em;
+    transition: opacity 0.5s ease;
+  }
+
+  .btn:hover {
+    opacity: 0.8;
+  }
+
+  i {
+    pointer-events: none;
+  }
+
+  .main {
+    width: 85%;
+    margin: auto;
+    box-shadow: 0 0 3px black;
+    margin-top: 5rem;
+  }
+
+  .main-content {
+    border-bottom: 1px solid #333;
+    padding: 1rem;
+  }
+
+  .content-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 2em;
+  }
+
+  .input-container {
+    position: relative;
+    margin-bottom: 1.5em;
+  }
+
+  #task {
+    width: 100%;
+    cursor: text;
+    border: none;
+    border-radius: none;
+    border-bottom: 2px solid #525252;
+    outline: none;
+    height: 1.5rem;
+    padding: 5px;
+    transition: all 0.5s ease;
+  }
+
+  #task:focus {
+    border-bottom: 2px solid #26a69a;
+  }
+
+  .task-label {
+    position: absolute;
+    cursor: text;
+    top: 0;
+    left: 5px;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+  }
+
+  #task:focus + .task-label {
+    color: #26a69a;
+  }
+
+  #task:focus + .task-label,
+  #task:valid + .task-label {
+    transform: translateY(-25px);
+
+    font-size: 0.75rem;
+  }
+
+  .add-task {
+    background: #26a69a;
+    color: #fff;
+  }
+
+  .main-action {
+    padding: 1rem;
+  }
+
+  .action-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 2em;
+  }
+
+  .input-field {
+    position: relative;
+    margin-bottom: 1.5em;
+  }
+
+  #filter {
+    width: 100%;
+    cursor: text;
+    border: none;
+    border-radius: none;
+    border-bottom: 2px solid #525252;
+    outline: none;
+    height: 1.5rem;
+    padding: 5px;
+    transition: all 0.5s ease;
+  }
+
+  #filter:focus {
+    border-bottom: 2px solid #26a69a;
+  }
+
+  .filter-label {
+    position: absolute;
+    cursor: text;
+    top: 0;
+    left: 5px;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+  }
+
+  #filter:focus + .task-label {
+    color: #26a69a;
+  }
+
+  #filter:focus + .filter-label,
+  #filter:valid + .filter-label {
+    transform: translateY(-25px);
+    font-size: 0.75rem;
+  }
+
+  .collection {
+    border: 1px solid #525252;
+    margin-bottom: 1.5em;
+  }
+
+  .collection-item {
+    padding: 0.7em 1em;
+    border-bottom: 1px solid #525252;
+    list-style: none;
+  }
+
+  .collection-item:last-child {
+    border-bottom: none;
+  }
+
+  .delete-btn {
+    float: right;
+    color: #333;
+  }
+
+  .clear-tasks {
+    background: rgb(15, 15, 15);
+    color: white;
+    text-decoration: none;
+  }

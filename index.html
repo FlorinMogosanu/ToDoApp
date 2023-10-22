@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/819f9f7516.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>To do app</title>
+</head>
+<body>
+    <main class="main">
+        <div class="main-content">
+            <p class="content-title">Task List</p>
+            <div class="form-container">
+                <form id="task-form">
+                    <div class="input-container">
+                        <input type="text" name="task" id="task" autocomplete="off" required>
+                        <label for="task" class="task-label">New Task</label>
+                    </div>
+                    <input type="submit" value="Add Task" class="add-task btn">
+                </form>
+            </div>
+        </div>
+
+        <div class="main-action">
+            <h3 class="action-title">Tasks</h3>
+            <div class="input-field">
+                <input type="text" name="filter" id="filter" autocomplete="off" required>
+                <label for="filter" class="filter-label">Filter Tasks</label>
+            </div>
+            <div class="colection-container">
+                <ul class="collection">
+                </ul>
+            </div>
+            <a href="#" class="clear-tasks btn">Clear tasks</a>
+        </div>
+
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
